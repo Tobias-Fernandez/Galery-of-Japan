@@ -171,6 +171,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     transform: scale(0);
     transition: 0.8s ease;
@@ -178,4 +179,31 @@ h2 {
 
 .box:hover .text{
     transform: scale(1);
+}
+
+/* estilos de mobile */
+
+@media  (max-width: 576px) {
+    
+    ul {
+        padding-left: 0;
+        height: 900px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .simbolo {
+        width: 55px;
+    }
+
+    ul i {
+        color: transparent;
+        animation-name: none;
+    }
 }
